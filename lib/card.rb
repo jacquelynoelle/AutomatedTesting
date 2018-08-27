@@ -12,7 +12,7 @@ class Card
   end
 
   def to_s
-    case @value
+    case value
     when 1
       face_value = "Ace"
     when 11
@@ -22,7 +22,7 @@ class Card
     when 13
       face_value = "King"
     else
-      face_value = @value
+      face_value = value
     end
     return "#{face_value} of #{suit.to_s}"
   end
